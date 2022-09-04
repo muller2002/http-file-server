@@ -52,7 +52,7 @@ const directoryListingTemplateText = `
 	<tr>
 		{{ if (not .IsDir) }}
 		<td class=text><a href="{{ .URL.String }}">{{ .Name }}</a></td>
-		<td class=text><a href="{{ .URL.String }}" download>(Download)</a></td>
+		<td class=text><a href="{{ .URL.String }}" download>(download)</a></td>
 		<td class=number>{{.Size.String }}</td>
 		<td class=number>({{ .Size | printf "%d" }})</td>
 		{{ else }}
